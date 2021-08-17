@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js-Calculator</title>
+    <!-- Tailwind css -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-200">
+
+    <section>
+        <div class="w-1/5 bg-white mx-auto mt-28 py-8 px-6 rounded shadow-2xl">
+           <div>
+               <input type="text" disabled placeholder="0" class="w-full h-14 p-2 rounded bg-white shadow-lg border-8 border-light-blue-500 text-right fw-bold" id="inputPanel">
+           </div>
+           <div class="flex justify-between mt-12 text-center">
+               <input onclick="getFieldValue(btn7.value);" type="button" id="btn7" value="7" class="bg-white rounded-lg shadow-2xl border-2 border-light-blue-500 text-2xl fw-bold w-14 h-14">
+               <input onclick="getFieldValue(btn8.value);" type="button" id="btn8" value="8" class="bg-white rounded-lg shadow-2xl border-2 border-light-blue-500 text-2xl fw-bold w-14 h-14">
+               <input onclick="getFieldValue(btn9.value);" type="button" id="btn9" value="9" class="bg-white rounded-lg shadow-2xl border-2 border-light-blue-500 text-2xl fw-bold w-14 h-14">
+               <input onclick="getFieldValue(btnPlus.value);" type="button" id="btnPlus" value="+" class="bg-black text-white rounded-lg shadow-2xl border-2 border-light-blue-500 text-2xl fw-bold w-14 h-14">
+           </div>
+           <div class="flex justify-between mt-4 text-center">
+               <input onclick="getFieldValue(btn4.value);" type="button" id="btn4" value="4" class="bg-white rounded-lg shadow-2xl border-2 border-light-blue-500 text-2xl fw-bold w-14 h-14">
+               <input onclick="getFieldValue(btn5.value);" type="button" id="btn5" value="5" class="bg-white rounded-lg shadow-2xl border-2 border-light-blue-500 text-2xl fw-bold w-14 h-14">
+               <input onclick="getFieldValue(btn6.value);" type="button" id="btn6" value="6" class="bg-white rounded-lg shadow-2xl border-2 border-light-blue-500 text-2xl fw-bold w-14 h-14">
+               <input onclick="getFieldValue(btnMinus.value);" type="button" id="btnMinus" value="-" class="bg-black text-white rounded-lg shadow-2xl border-2 border-light-blue-500 text-2xl fw-bold w-14 h-14">
+           </div>
+           <div class="flex justify-between mt-4 text-center">
+               <input onclick="getFieldValue(btn1.value);" type="button" id="btn1" value="1" class="bg-white rounded-lg shadow-2xl border-2 border-light-blue-500 text-2xl fw-bold  w-14 h-14">
+               <input onclick="getFieldValue(btn2.value);" type="button" id="btn2" value="2" class="bg-white rounded-lg shadow-2xl border-2 border-light-blue-500 text-2xl fw-bold w-14 h-14">
+               <input onclick="getFieldValue(btn3.value);" type="button" id="btn3" value="3" class="bg-white rounded-lg shadow-2xl border-2 border-light-blue-500 text-2xl fw-bold w-14 h-14">
+               <input onclick="getFieldValue(btnMulti.value);" type="button" id="btnMulti" value="*" class="bg-black text-white rounded-lg shadow-2xl border-2 border-light-blue-500 text-2xl fw-bold w-14 h-14">
+           </div>
+           <div class="flex justify-between mt-4 text-center">
+               <input onclick="getFieldValue(btnDot.value);" type="button" id="btnDot" value="." class="bg-white rounded-lg shadow-2xl border-2 border-light-blue-500 text-2xl fw-bold w-14 h-14">
+               <input onclick="getFieldValue(btnZero.value);" type="button" id="btnZero" value="0" class="bg-white rounded-lg shadow-2xl border-2 border-light-blue-500 text-2xl fw-bold w-14 h-14">
+               <input onclick="calculate(inputPanel.value);" type="button" id="btnEqual" value="=" class="bg-black text-white rounded-lg shadow-2xl border-2 border-light-blue-500 text-2xl fw-bold w-14 h-14">
+               <input onclick="getFieldValue(btndivide.value);" type="button" id="btndivide" value="/" class="bg-black text-white rounded-lg shadow-2xl border-2 border-light-blue-500 text-2xl fw-bold w-14 h-14">
+           </div>
+           <div class="flex justify-between mt-4 text-center">
+               <input onclick="fieldClear();" type="button" id="btnClear" value="C" class="bg-red-600 text-white rounded-lg shadow-2xl border-2 border-light-blue-500 text-2xl fw-bold w-14 h-14">
+               <input onclick="back();" type="button" id="btnBack" value="B" class="bg-green-500 text-white rounded-lg shadow-2xl border-2 border-light-blue-500 text-2xl fw-bold w-14 h-14">
+           </div>
+           
+        </div>
+    </section>
+    <!-- js file -->
+    <script src="js/calculator.js"></script>
+</body>
+</html>
